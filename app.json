@@ -1,0 +1,28 @@
+{
+  "name": "test-easy-lunch",
+  "description": "The admin microservice of test-easy-lunch",
+  "website": "http://www.forestadmin.com/lumber",
+  "repository": "https://github.com/ForestAdmin/lumber",
+  "env": {
+    "FOREST_AUTH_SECRET": {
+      "description": "A random JWT signing secret to protect your admin API",
+      "value": "51e1a82a9673115e1a23a54862346bc30300248d76e36f396f5549e95b5c162d35d5bb9acfe88c638c5ad94eaa759404"
+    },
+    "FOREST_ENV_SECRET": {
+      "description": "The Forest environment secret",
+      "value": "83ee47fd427d16e660b30a1c27091465bac4ed5b7fe83bafbdf1ee20f5a85a5c"
+    },
+    "DATABASE_URL": {
+      "description": "The remote database connection URL",
+      "value": "postgres://<user>:<password>@<host>:<port>/<databaseName>"
+    },
+    "SSL_DATABASE": {
+      "description": "Specify if a SSL database connection is required.",
+      "value": "true"
+    },
+    "ENCRYPT_DATABASE": {
+      "description": "Specify if the database connection is encrypted.",
+      "value": "false"
+    }
+  }
+}
